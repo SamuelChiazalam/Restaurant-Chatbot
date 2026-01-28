@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Chatbot - Order Meals Online</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-content">
+          <h1>🍽️ Restaurant Chatbot</h1>
+          <p class="subtitle">Order your favorite meals online</p>
+        </div>
+      </div>
+
+      <!-- Main Chat Container -->
+      <div class="chat-wrapper">
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chatMessages">
+          <div class="message bot-message">
+            <span class="avatar">🤖</span>
+            <div class="message-content">
+              <p>Loading chat interface... Please wait.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Enter a number from the menu..."
+              class="message-input"
+            />
+            <button id="sendButton" class="send-button">
+              <span>Send</span>
+              <span class="icon">➤</span>
+            </button>
+          </div>
+          <small class="hint">Press Enter to send or click Send button</small>
+        </div>
+      </div>
+
+      <!-- Order Summary Sidebar -->
+      <div class="sidebar">
+        <div class="order-summary">
+          <h3>📦 Order Summary</h3>
+          <div id="orderItems" class="order-items">
+            <p class="empty-state">No items added yet</p>
+          </div>
+          <div class="order-total">
+            <span>Total:</span>
+            <span id="totalAmount">₦0</span>
+          </div>
+          <button id="clearOrderBtn" class="clear-btn" style="display: none">
+            Clear Order
+          </button>
+        </div>
+
+        <!-- Payment Status -->
+        <div class="payment-section">
+          <h3>💳 Payment</h3>
+          <div id="paymentStatus" class="payment-status">
+            <p class="status-idle">Ready to pay when you checkout</p>
+          </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="recent-orders">
+          <h3>📜 Recent Orders</h3>
+          <div id="recentOrdersList" class="recent-orders-list">
+            <p class="empty-state">No orders placed yet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h2>Complete Your Payment</h2>
+        <div id="paymentInfo" class="payment-info"></div>
+        <button id="proceedPaymentBtn" class="payment-btn">
+          Pay with Paystack
+        </button>
+        <button id="cancelPaymentBtn" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-indicator" style="display: none">
+      <div class="spinner"></div>
+    </div>
+
+    <script src="/js/chat.js"></script>
+  </body>
+</html>
