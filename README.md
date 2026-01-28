@@ -51,8 +51,8 @@ A sophisticated restaurant ordering chatbot application built with Node.js, Expr
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
-   cd resturant-chatbot-test
+   git clone https://github.com/SamuelChiazalam/Restaurant-Chatbot.git
+   cd Resturant-Chatbot
    ```
 
 2. **Install dependencies**
@@ -332,13 +332,5 @@ Samuel Chiazalam Ugbo
 
 For issues, questions, or suggestions, please create an issue in the repository.
 
-## 🎯 Submission Details
-
-- **Course**: AltSchool Backend Engineering Baraka 2025 - Third Semester
-- **Module**: BEN 523
-- **Assessment**: 3
-- **Deadline**: 28th January, 2026
-
----
 
 **Happy Ordering! 🍽️** 🎉
